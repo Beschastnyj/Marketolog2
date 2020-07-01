@@ -1,0 +1,92 @@
+.trouble 
+
+.trouble__inner 
+
+.trouble__title 
+  margin: 0 0 3.1rem
+  @media (max-width: $md2)
+    margin: 0 0 2.3rem
+
+.trouble__sup-title 
+  font-size: 2.4rem
+  color: #333
+  text-align: center 
+  margin: 0 0 8.4rem
+  @media (max-width: $md2)
+    margin: 0 0 3.5rem
+
+.trouble__range 
+  width: 100%
+  max-width: 1590px
+  margin: 0 auto 
+  height: 900px
+  margin: 0 0 12rem
+
+.trouble__range-item 
+  font-size: 2.4rem
+  &:not(:last-child)
+    border-bottom: 1px solid #e1e1e1
+  @media (max-width: $md2)
+    font-size: 1.8rem
+  @media (max-width: $md4)
+    font-size: 1.5rem
+
+.trouble__range-item-head--last
+  line-height: 1.6
+
+.trouble__range-item-head 
+  padding: 3rem 0 3rem 10rem
+  position: relative
+  @media (min-width: 992.98px)
+    &:hover
+      cursor: pointer
+  &:before 
+    width: 17px
+    height: 17px 
+    display: inline-block
+    content: ''
+    border-top: 4px solid $blue
+    border-right: 4px solid $blue
+    position: absolute 
+    top: 35%
+    left: 50px
+    transform: rotate(133deg)
+    transition: all .3s linear
+  @media (max-width: $md2)
+    padding: 1.5rem 0 1.5rem 10rem
+    &:before 
+      width: 14px
+      height: 14px
+  @media (max-width: $md4)
+    padding: 1.5rem 0 1.5rem 5rem
+    &:before
+      left: 1rem
+
+.trouble__range-item-head.active
+  &:before
+    transform: translateY(30%) rotate(45deg)
+    border-top: 4px solid $red
+    border-right: 4px solid $red
+
+.trouble__range-item-body 
+  padding: 2.5rem 0 2.5rem 20rem
+  position: relative
+  display: none
+  &:before
+    content: ''
+    display: inline-block
+    height: 30px
+    width: 30px
+    background: url(../images/trouble/icons/i1.png)no-repeat center / cover
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 150px
+  @media (max-width: $md2)
+    padding: 1.5rem 0 1.5rem 19rem
+    &:before
+      width: 24px
+      height: 24px
+      left: 70px
+  @media (max-width: $md4)
+    padding: 1.5rem 0 1.5rem 12rem

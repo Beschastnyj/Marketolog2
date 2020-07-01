@@ -1,0 +1,184 @@
+.intro 
+	background: url(../images/intro/bg.jpg)no-repeat center / cover
+	margin: 0 0 25.1rem
+
+.intro__inner 
+	padding: 7.5rem 0 34rem 
+	width: 100%
+	max-width: 1434px
+	margin: 0 auto 
+	@media (max-width: $md1)
+		padding: 3rem 0 34rem
+	@media (max-width: $md2)
+		padding: 1.5rem 0 30rem
+	@media (max-width: $md4)
+		padding: 1rem 0 20rem
+	@media (max-width: $md5)
+		padding: 1rem 0 15rem
+
+.intro__top 
+	display: flex
+	justify-content: space-between
+	align-items: center
+	height: 65px
+	margin: 0 0 25.1rem
+	@media (max-width: $md1)
+		margin: 0 0 15rem
+	@media (max-width: $md5)
+		margin: 0 0 5rem
+
+.intro__logo 
+	width: 31.7rem
+	height: 3rem
+	@media (max-width: $md2)
+		width: 25rem
+		height: 2rem
+
+.intro__logo-item 
+	img 
+		max-width: 100%
+
+.intro__menu 
+	display: flex
+	align-items: center
+	position: relative
+	@media (max-width: $md4)
+		position: fixed 
+		top: 0
+		left: 0
+		z-index: 3
+		width: 100%
+		height: 100%
+		background: $blue
+		flex-flow: column-reverse
+		justify-content: center 
+		top: -100%
+
+.intro__menu.active
+	transform: translateY(100%)
+	transition: all .3s linear
+
+.intro__menu-item 
+	color: $white
+	font-size: 2rem
+	white-space: nowrap
+	overflow: hidden
+	@media (max-width: $md2)
+		font-size: 1.7rem
+	@media (max-width: $md4)
+		&:not(:first-child)
+			margin: 0 0 3rem
+
+.intro__menu-item--follow
+	margin: 0 2rem 0 0
+	@media (max-width: $md2)
+		margin: 0 1rem 0 0
+	@media (max-width: $md4)
+		font-size: 2rem
+		text-transform: uppercase
+
+.intro__menu-item--facebook
+	margin: 0 2.3rem 0 0
+	border-radius: 50%
+	width: 50px
+	height: 50px
+	img 
+		max-width: 100%
+	@media (min-width: 992.98px)
+		&:hover
+			background: $red
+			transition: all .3s linear
+	@media (max-width: $md2)
+		margin: 0 1rem 0 0
+		width: 30px
+		height: 30px
+	@media (max-width: $md4)
+		width: 50px
+		height: 50px
+
+
+.intro__menu-item--youtube 
+	margin: 0 4.2rem 0 0
+	border-radius: 50%
+	width: 50px
+	height: 50px
+	img 
+		max-width: 100%
+	@media (min-width: 992.98px)
+		&:hover
+			background: $red
+			transition: all .3s linear
+	@media (max-width: $md2)
+		margin: 0 1rem 0 0
+		width: 30px
+		height: 30px
+	@media (max-width: $md4)
+		width: 50px
+		height: 50px
+
+.intro__menu-item--faq
+	margin: 0 5.1rem 0 0
+	text-transform: uppercase
+	@media (max-width: $md2)
+		margin: 0 1rem 0 0
+	@media (max-width: $md4)
+		font-size: 2rem
+
+.intro__menu-item--btn 
+	font-size: 2rem
+	background: none 
+	padding: .8em 1.6em
+	border: .1em solid $white 
+	@media (min-width: 992.98px)
+		&:hover
+			background: $red
+			transition: all .3s linear
+	@media (max-width: $md2)
+		font-size: 1.5rem
+	@media (max-width: $md3)
+		padding: .6em 1.4em 
+	@media (max-width: $md4)
+		font-size: 2rem
+		border: 0
+		text-transform: uppercase
+
+.intro__menu-item--lang 
+	text-transform: uppercase
+	background: none
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	right: -87px
+	option
+		background: black
+	@media (min-width: 992.98px)
+		&:hover
+			background: $red
+			transition: all .3s linear
+	@media (max-width: $md1)
+		top: 9rem
+		right: 0
+	@media (max-width: $md2)
+		font-size: 1.5rem
+		top: 7rem
+	@media (max-width: $md4)
+		position: static
+		font-size: 2rem
+
+//Intro-middle===================================================================================
+
+.intro__middle 
+
+.intro__title 
+	color: $white
+	font-size: 4rem
+	font-weight: 700
+	line-height: 5rem
+	padding: 0 0 0 2.7rem
+	border-left: 4px solid $red
+	margin: 0 0 5rem
+	span
+		color: $red
+	@media (max-width: $md2)
+		font-size: 3rem
+

@@ -1,0 +1,31 @@
+.intro__burger
+	display: none 
+	@media (max-width: $md4)
+		display: block
+		width: 30px
+		height: 20px
+		position: relative
+		z-index: 7
+		span, &:before, &:after
+			width: 100%
+			height: 2px
+			background: #fff
+			position: absolute
+			left: 0
+			content: ""
+		span 
+			top: 50%
+			transform: translateY(-50%)
+		&:before
+			top: 0	
+		&:after 
+			bottom: 0
+
+.intro__burger.active
+	transform: translateY(-10px)
+	span
+		opacity: 0
+	&:before
+		transform: translateY(18px) rotate(45deg)
+	&:after 
+		transform: rotate(-45deg)

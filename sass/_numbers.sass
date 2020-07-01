@@ -1,0 +1,136 @@
+.numbers 
+  padding: 0 0 25.2rem
+
+.numbers__Inner 
+
+.numbers__title 
+  margin: 0 0 8.4rem
+
+.numbers__row-wrapper
+  width: 100%
+  max-width: 1153px
+  margin: 0 auto 
+
+.numbers__row
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 0 -5rem 24rem
+  @media (max-width: $md3)
+    justify-content: center
+
+.numbers__box-wrapper 
+  flex: 0 0 33.333%
+  padding: 0 5rem
+  @media (max-width: $md3)
+    flex: 0 0 70%
+    margin: 0 0 2rem
+
+.number__box 
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.number__box-img 
+  width: 216px
+  height: 216px
+  border-radius: 50%
+  display: flex
+  justify-content: center 
+  align-items: center
+  position: relative
+  font-size: 7.2rem
+  color: $blue
+  font-weight: 500
+  margin: 0 0 3.8rem
+  img 
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+
+.numbers__box-title 
+  font-size: 2.4rem 
+  color: #333
+  font-weight: 500
+  text-align: center
+
+.numbers__second-title 
+  color: $blue
+  font-size: 2.5rem
+  font-weight: 700
+  text-align: center
+  margin: 0 0 2.5rem
+
+.number__suptitle 
+  font-size: 2rem
+  color: $black
+  text-align: center
+  margin: 0 0 5rem
+
+.numbers__user-data
+  display: flex
+  flex-wrap: wrap 
+  margin: 0 -1rem
+  align-items: center
+  @media (max-width: $md3)
+    justify-content: center
+
+.numbers__user-wrap  
+  padding: 0 1rem
+  flex: 0 0 25%
+  height: 6rem
+  &:focus 
+    .numbers__user-icons
+      fill: $blue
+  @media (max-width: $md3)
+    flex: 0 0 33.333%
+    margin: 0 0 2rem
+  @media (max-width: $md4)
+    flex: 0 0 90%
+
+.numbers__user-icons 
+  width: 3rem
+  height: 3rem
+  fill: $gray
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  left: 20px
+ 
+
+.number__user-input
+  height: 6rem
+  width: 100%
+  border-bottom: 2px solid $gray
+  padding: 0 0 0 6rem
+  font-size: 2rem
+  &::placeholder
+    font-size: 1.8rem
+    color: $gray
+    font-weight: 300
+  &:focus 
+    border-bottom: 2px solid $blue
+    &::placeholder
+      opacity: 0
+
+.numbers__user-text 
+  position: relative
+
+.numbers__user-phone 
+  position: relative
+
+.numbers__user-mail 
+  position: relative
+
+.numbers__btn-block 
+  height: 100%
+
+.numbers__btn 
+  width: 100%
+  height: 100%
+  background: $blue
+  color: $white
+  font-size: 2rem

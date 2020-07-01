@@ -1,0 +1,79 @@
+.stage 
+  padding: 214px 0 190px
+  position: relative
+  background: $white
+
+.stage__pic  
+  position: absolute
+  &--one 
+    left: 134px
+    top: -20px
+    @media (max-width: $md1)
+      width: 200px
+      top: 0
+      left: 50px
+    @media (max-width: $md4)
+      display: none
+  &--two
+    top: -130px
+    right: 136px
+    @media (max-width: $md1)
+      width: 300px
+      top: -50px
+      right: 50px
+    @media (max-width: $md2)
+      width: 200px
+      top: -5px
+    @media (max-width: $md4)
+      display: none
+
+.stage__inner 
+
+.stage__title 
+  margin: 0 0 7.5rem
+
+.stage__row 
+  width: 100%
+  max-width: 1049px
+  margin: 0 auto
+
+.stage__row-top
+  display: flex
+  flex-wrap: wrap 
+  justify-content: space-between
+  margin: 0 -1.6rem 2.5rem
+
+.stage__box 
+  flex: 0 0 20%
+  position: relative
+  text-align: center
+  >img
+    max-width: 100%
+    position: absolute
+    right: -75px
+    top: 30%
+    @media (max-width: $md2)
+      width: 60px
+      right: -50px
+  @media (max-width: $md3)
+    flex: 0 0 45%
+    margin: 0 0 2rem
+
+.stage__box .stage__icons
+  right: -.5rem
+  @media (max-width: $md2)
+    width: 10px
+
+.stage__img-box 
+  img 
+    max-width: 100%
+
+.stage__box-title 
+  font-weight: 500
+  font-size: 1.8rem
+  color: $black
+  margin: 0 0 .7rem
+
+.stage__description 
+  font-size: 1.6rem
+  line-height: 1.2

@@ -1,0 +1,104 @@
+.video__box 
+	display: flex 
+	padding: 0 0 0 2.8rem
+	@media (max-width: $md4)
+		flex-flow: column-reverse 
+		align-items: flex-start 
+
+.video__icon 
+	width: 60px
+	height: 60px
+	border: 2px solid #fff
+	position: relative
+	background: transparent 
+	margin: 0 2.3rem 0 0
+	img 
+		max-width: 100%
+		position: absolute
+		top: 50%
+		left: 34% 
+		transform: translateY(-50%)
+	@media (min-width: 992.98px)
+		&:hover
+			background: $red
+			transition: all .3s linear
+	@media (max-width: $md2)
+		width: 40px
+		height: 40px
+		bottom: 1px solid #fff
+		img
+			left: 22%
+	@media (max-width: $md4)
+		margin: 2rem 0 0
+
+.video__text 
+	background: none
+	color: $white
+	font-size: 2rem
+	@media (min-width: 992.98px)
+		&:hover
+			color: $red
+			transition: all .3s linear
+	@media (max-width: $md2)
+		font-size: 1.7rem
+	@media (max-width: $md4)
+		background: $blue
+		border-radius: 3px
+		padding: 5px 10px
+		border: 1px solid $white
+		text-transform: uppercase
+		font-size: 1.5rem
+
+.phone__wrapper 
+	width: 100px
+	height: 100px
+	background: $white 
+	border: 2px solid $red
+	border-radius: 50% 
+	display: flex 
+	position: fixed 
+	bottom: 9rem
+	right: 9rem
+	z-index: 2
+	animation: phoneBtn 1s linear infinite alternate 0s 
+	@media (min-width: 992.98px)
+		&:hover
+			cursor: pointer 
+	@media (max-width: $md1)
+		bottom: 5rem
+		right: 5rem
+	@media (max-width: $md2)
+		width: 80px
+		height: 80px
+	@media (max-width: 320px)
+		width: 60px
+		height: 60px
+		bottom: 3rem
+		right: 3rem
+
+.phone
+	margin: auto 
+	display: flex
+	background: $red 
+	width: 93% 
+	height: 93% 
+	border-radius: 50%
+	justify-content: center 
+	align-items: center 
+	img 
+		width: 60%
+
+	
+@keyframes phoneBtn
+	0%
+		transform: scale(1)
+	100%
+		transform: scale(1.3)
+
+.title
+	color: $blue
+	font-size: 4rem
+	font-weight: 700
+	text-align: center
+	span 
+		color: $red

@@ -1,0 +1,86 @@
+.questions 
+  background: url(../images/questions/bg3.jpg)no-repeat bottom / contain
+  padding: 0 0 49rem
+  position: relative
+  img
+    position: absolute
+    bottom: 300px
+    right: 340px
+
+.questions__inner 
+  width: 100%
+  max-width: 1615px
+  margin: 0 auto 
+
+.questions__title
+  margin: 0 0 3rem 
+  @media (max-width: $md2)
+    margin: 0 0 1.5rem
+
+.questions__suptitle 
+  font-size: 2.4rem
+  text-align: center
+  color: #333
+  margin: 0 0 6.4rem
+
+.questions__row 
+  display: flex
+
+.questions__box
+  flex: 0 0 50% 
+
+.questions__box--questions 
+
+.questions__box-item 
+  padding: 3rem 0 3rem 9rem
+  font-size: 2.4rem
+  color: #333
+  position: relative
+  width: 90%
+  &:before
+    position: absolute
+    left: 5rem
+    content: ''
+    display: inline-block
+    height: 17px
+    width: 17px
+    background: none 
+    border-right: 4px solid $blue
+    border-top: 4px solid $blue
+    transform: rotate(133deg) 
+  &:not(:last-child)
+    border-bottom: 1px solid #e1e1e1
+  @media (min-width: 992.98px)
+    &:hover
+      cursor: pointer
+
+.questions__box-item.active 
+  &:before 
+    transform: rotate(45deg)
+    border-top: 4px solid $red
+    border-right: 4px solid $red
+    transition: all .2s linear
+
+.questions__box-item--one 
+
+.questions__box-item--two 
+
+.questions__box-item--three 
+
+.questions__box--answers
+
+.questions__unit-item
+  font-size: 2rem
+  color: #333
+  line-height: (30px/20px)
+  padding: 3rem 0 3rem 4rem
+  border-left: 4px solid $red
+  display: none
+  span
+    font-weight: 500
+  p 
+    &:not(:last-child)
+      margin: 0 0 4rem
+      
+.questions__unit-item.active
+  display: block

@@ -1,0 +1,84 @@
+.mention 
+  background: $white
+  padding: 0 0 25rem
+
+.mention__title 
+  margin: 0 0 10rem
+
+.mention__slider
+  width: 100%
+  max-width: 1593px
+  margin: 0 auto
+  padding: 0 9rem 
+  .slick-list
+    overflow: hidden
+
+.mention__slider 
+  .slick-track
+    display: flex
+    position: relative
+    width: 100px
+
+.mention__slider-item 
+  display: flex
+  flex-direction: column  
+  position: relative
+  flex: 0 0 425px
+  padding: 9rem 3rem 4.5rem
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+  margin: 10rem 5rem 8rem 0
+  img 
+    position: absolute
+    top: -7rem
+    left: 4rem
+    display: block
+    width: 126px
+    height: 121px
+
+.mention__slider
+  position: relative
+  .slick-arrow
+    font-size: 0
+    width: 56px
+    height: 56px
+    border-radius: 50%
+    position: absolute
+    top: 50%
+    z-index: 1
+/* Стрелка влево */
+.mention__slider
+  .slick-arrow.slick-prev
+    background: url(../images/expertise/icons/i1.png)no-repeat center / cover
+    left: 0
+/* Стрелка вправо */
+.mention__slider
+  .slick-arrow.slick-next
+    background: url(../images/expertise/icons/i2.png)no-repeat center / cover
+    right: 0
+
+.mention__description 
+  font-size: 2rem
+  color: #333
+  font-family: $ffm
+  line-height: (30px/20px)
+  margin: 0 0 2rem
+  flex: 1 0 auto
+
+.mention__author 
+  color: $blue
+  font-size: 2rem
+  font-weight: 500
+
+.mention__btn 
+  font-size: 2rem
+  color: $white
+  background: $blue 
+  display: flex
+  padding: 1em 2em
+  margin: 0 auto
+  span 
+    margin: 0 .5em 0 0
+  @media (min-width: 992.98px)
+    &:hover
+      background: $red
+      transition: all .3s linear
